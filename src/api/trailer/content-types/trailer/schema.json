@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trailers",
+  "info": {
+    "singularName": "trailer",
+    "pluralName": "trailers",
+    "displayName": "trailer"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "imageUrl": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "videoUrl": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

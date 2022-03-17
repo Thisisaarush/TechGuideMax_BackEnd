@@ -1,0 +1,76 @@
+{
+  "kind": "collectionType",
+  "collectionName": "latest_stories",
+  "info": {
+    "singularName": "latest-story",
+    "pluralName": "latest-stories",
+    "displayName": "latestStory"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "imageUrl": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "imageUrl2": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "imageUrl3": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Apple",
+        "Android",
+        "Windows"
+      ],
+      "required": true
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "author": {
+      "type": "enumeration",
+      "enum": [
+        "Aarush",
+        "Sanjay"
+      ],
+      "required": true
+    },
+    "source": {
+      "type": "string",
+      "required": false
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
+    "content2": {
+      "type": "richtext"
+    },
+    "content3": {
+      "type": "richtext"
+    }
+  }
+}
